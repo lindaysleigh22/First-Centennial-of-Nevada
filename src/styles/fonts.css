@@ -1,0 +1,19 @@
+/* Font family variables */
+:root {
+  --font-heading: 'Antonio', 'Arial Black', sans-serif;
+  --font-body: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Apply font families globally */
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
