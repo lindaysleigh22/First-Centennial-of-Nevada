@@ -239,5 +239,6 @@ export function Footer() {
         <div className="absolute bottom-0 right-0 w-1 h-full bg-[#e9a753]"></div>
       </div>
     </footer>
+    
   );
 }
