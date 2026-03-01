@@ -247,3 +247,39 @@ export function AcornPlacement() {
     </div>
   );
 }
+
+        {/* Scale Preview */}
+        <div className="mt-16 bg-white rounded-3xl shadow-lg p-12">
+          <h2 className="text-2xl font-bold text-[#333333] mb-8 text-center">
+            Preview at Different Sizes
+          </h2>
+          <p className="text-center text-[#333333]/60 mb-8">
+            Try each option at various scales to see which placement looks best for embroidery
+          </p>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-12">
+            {options.slice(0, 3).map((option, idx) => {
+              const Component = option.component;
+              return (
+                <div key={idx} className="flex flex-col items-center gap-4">
+                  <p className="text-sm font-bold text-[#333333]/70">{option.name}</p>
+                  <div className="flex items-end gap-3">
+                    <div style={{ width: '96px', height: '96px' }} className="flex items-center justify-center">
+                      <Component />
+                    </div>
+                    <div style={{ width: '64px', height: '64px' }} className="flex items-center justify-center">
+                      <Component />
+                    </div>
+                    <div style={{ width: '48px', height: '48px' }} className="flex items-center justify-center">
+                      <Component />
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
